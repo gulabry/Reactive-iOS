@@ -13,6 +13,11 @@
 		C299FE981F136EEF005B23E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C299FE971F136EEF005B23E0 /* Assets.xcassets */; };
 		C299FE9B1F136EEF005B23E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C299FE991F136EEF005B23E0 /* LaunchScreen.storyboard */; };
 		C299FEA61F136EEF005B23E0 /* ReactiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299FEA51F136EEF005B23E0 /* ReactiveTests.swift */; };
+		C299FECC1F136FAB005B23E0 /* ReactiveModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C299FECB1F136FAB005B23E0 /* ReactiveModel.swift */; };
+		C299FED11F138287005B23E0 /* ReactiveJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C299FECE1F138287005B23E0 /* ReactiveJSON.framework */; };
+		C299FED21F138287005B23E0 /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C299FECF1F138287005B23E0 /* ReactiveSwift.framework */; };
+		C299FED31F138287005B23E0 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C299FED01F138287005B23E0 /* Result.framework */; };
+		C2AB0C501F139BB400DC357C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB0C4F1F139BB400DC357C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,11 @@
 		C299FEA11F136EEF005B23E0 /* ReactiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C299FEA51F136EEF005B23E0 /* ReactiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveTests.swift; sourceTree = "<group>"; };
 		C299FEA71F136EEF005B23E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C299FECB1F136FAB005B23E0 /* ReactiveModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveModel.swift; sourceTree = "<group>"; };
+		C299FECE1F138287005B23E0 /* ReactiveJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveJSON.framework; path = Carthage/Build/iOS/ReactiveJSON.framework; sourceTree = "<group>"; };
+		C299FECF1F138287005B23E0 /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
+		C299FED01F138287005B23E0 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		C2AB0C4F1F139BB400DC357C /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C299FED11F138287005B23E0 /* ReactiveJSON.framework in Frameworks */,
+				C299FED21F138287005B23E0 /* ReactiveSwift.framework in Frameworks */,
+				C299FED31F138287005B23E0 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +75,7 @@
 				C299FE8F1F136EEF005B23E0 /* Reactive */,
 				C299FEA41F136EEF005B23E0 /* ReactiveTests */,
 				C299FE8E1F136EEF005B23E0 /* Products */,
+				C299FECD1F138287005B23E0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,8 +91,10 @@
 		C299FE8F1F136EEF005B23E0 /* Reactive */ = {
 			isa = PBXGroup;
 			children = (
+				C2AB0C4F1F139BB400DC357C /* DetailViewController.swift */,
 				C299FE901F136EEF005B23E0 /* AppDelegate.swift */,
 				C299FE921F136EEF005B23E0 /* ViewController.swift */,
+				C299FECB1F136FAB005B23E0 /* ReactiveModel.swift */,
 				C299FE941F136EEF005B23E0 /* Main.storyboard */,
 				C299FE971F136EEF005B23E0 /* Assets.xcassets */,
 				C299FE991F136EEF005B23E0 /* LaunchScreen.storyboard */,
@@ -96,6 +112,16 @@
 			path = ReactiveTests;
 			sourceTree = "<group>";
 		};
+		C299FECD1F138287005B23E0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C299FECE1F138287005B23E0 /* ReactiveJSON.framework */,
+				C299FECF1F138287005B23E0 /* ReactiveSwift.framework */,
+				C299FED01F138287005B23E0 /* Result.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +132,7 @@
 				C299FE891F136EEF005B23E0 /* Sources */,
 				C299FE8A1F136EEF005B23E0 /* Frameworks */,
 				C299FE8B1F136EEF005B23E0 /* Resources */,
+				C299FED41F1382BA005B23E0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -196,13 +223,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C299FED41F1382BA005B23E0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveJSON.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/ReactiveSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C299FE891F136EEF005B23E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C299FECC1F136FAB005B23E0 /* ReactiveModel.swift in Sources */,
 				C299FE931F136EEF005B23E0 /* ViewController.swift in Sources */,
 				C299FE911F136EEF005B23E0 /* AppDelegate.swift in Sources */,
+				C2AB0C501F139BB400DC357C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +395,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62QZG759UY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Reactive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gula.Reactive;
@@ -357,6 +412,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 62QZG759UY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Reactive/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gula.Reactive;
@@ -414,6 +473,7 @@
 				C299FEAC1F136EEF005B23E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C299FEAD1F136EEF005B23E0 /* Build configuration list for PBXNativeTarget "ReactiveTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +482,7 @@
 				C299FEAF1F136EEF005B23E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
